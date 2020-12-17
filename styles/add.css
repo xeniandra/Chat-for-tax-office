@@ -1,0 +1,180 @@
+* 
+{
+	transition: 0.3s all;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+a 
+{ 
+	color: white;
+	text-decoration: none;
+}
+
+
+body
+{
+	background-attachment: fixed;
+	background-size: cover;
+	flex-direction: row;
+	background-image: url(2873087-modern-minimalism-abstract-colorful-vintage-adobe-illustrator___abstract-wallpapers.jpg);
+	font-family: "Roboto", sans-serif;
+	padding-top: 20px;	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+html, body
+{
+	height: 100%;
+	width: 100%
+}
+
+form, .blok_s_avoy
+{
+	min-height: 100%
+}
+
+.registracia{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+.blok_s_avoy
+{
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 2;
+}
+
+form
+{
+	min-width: 350px;
+	flex-grow: 5;
+}
+
+.backb {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: 1%;
+	display: flex;
+	flex-direction: column;
+}
+.back_to_button {
+	padding: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+	background: #f7b115;
+	width: fit-content;
+}
+    
+.picture{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-image: url('https://newtonew.com/uploads/avatars/8309719d9445c0866564a1a3bd2c0861.png');
+	background-size: cover;
+    border-radius: 100%;	
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 3px solid white;
+}
+
+input{
+	width: 50%;
+    margin-top: 2%;
+    padding: 17px;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 3px solid #ffffff;
+}
+h1{
+	display: inline-block;
+	color: white;
+	font-size: 1.5vw;
+}
+
+.submit{
+	font-size: large;
+	width: 40%;
+	color: white;
+    box-shadow: 0px 0px 14px -4px #478cc7;
+    background: linear-gradient(90deg, rgb(249, 173, 33) 0%, rgb(216, 105, 105) 100%);
+    border-radius: 10px;
+    font-weight: bolder;
+    border:0;
+}
+.submit:hover, .back_to_button:hover, .submit:active{
+	box-shadow: 0px 0px 22px -3px #35384a;
+	cursor: pointer;
+	border:0;
+	color: white;
+}
+ 
+ input:focus{
+ 	background-color: #ffffffa3;
+    border: 3px solid #ffffff;
+    color:black;
+ }
+
+.inputpass {
+	position: relative;
+	width: 100%;
+}
+.password {
+	position: relative;
+	width: 50%;
+	left: 25%;
+}
+.passwordOnOff {
+	position: absolute;
+	display: flex;
+	top: 52%;
+	right: 28%;
+	width: 20px;
+	height: 20px;
+	background: url(view.png) 0 0 no-repeat;
+	background-size: contain;
+}
+.passwordOnOff.view {
+	background: url(noview.png) 0 0 no-repeat;
+	background-size: contain
+}
+
+
+
+.box_3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_3 .infa p{
+    height: 100%;
+}
+
+.infa .name{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.infa{
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(249, 173, 33) 0%, rgb(216, 105, 105) 100%);
+    padding: 20px;
+    width: 80%;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -4px #478cc7;
+    color:white;
+    font-weight: bolder;
+}

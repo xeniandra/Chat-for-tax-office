@@ -1,0 +1,273 @@
+*{
+    transition: 0.3s all;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} 
+ 
+body{
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    background-image: url('2873087-modern-minimalism-abstract-colorful-vintage-adobe-illustrator___abstract-wallpapers.jpg');
+    display: flex;
+    flex-direction: row;
+}
+html, body
+{
+    height: 100%;
+}
+
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+
+html {
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */}
+
+/*в боксах флекс- под блоки*/
+.box_1{  
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_2{
+    height: 85%;
+    width: 55%;
+    margin-top: 25px;
+    border-radius: 1%;
+}
+
+.box_2 .messages{
+    height: 95%;
+    overflow-y: scroll;
+    padding: 3.5%;
+    border-bottom: 4px solid #3f8796;
+    background: white;
+}
+
+.box_2 .message{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.nameChat {
+    text-decoration:none; 
+    color: #26acff; 
+    background-color: unset;
+}
+.nameChat:hover {
+    text-decoration: underline; 
+}
+.delete {
+   text-decoration: none; 
+   color: #5e627a; 
+   margin-left: 90%;
+}
+.delete:hover {
+    font-weight: bolder;
+ }
+
+.vvodite {
+    resize: none;
+    width: 80%;
+    height: 100%;
+    /* word-wrap: break-word; */
+}
+
+span.date{
+    color: #162ab3;
+    font-size: x-small;
+}
+p.text{
+    width: fit-content;
+    max-width: 90%;
+    padding: 1%;
+    margin: 1%;
+    word-wrap: break-word;
+    color: #312f2fa6;
+    background-color: #e1eeffba;
+    border-radius: 5px;
+}
+.box_2 input{
+    height: 100%;
+    border: 0;
+    outline: none;
+}
+
+.box_3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_3 .infa p{
+    height: 100%;
+}
+
+ul .name, li .name {
+    display: flex;
+    list-style-type:none; 
+    text-decoration: none;
+    color: white;
+    background-color: unset;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+ul .name:hover {
+    text-decoration: underline;
+}
+
+.infa{
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgb(249, 173, 33) 0%, rgb(216, 105, 105) 100%);
+    padding: 20px;
+    width: 80%;
+    margin-top: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -4px #478cc7;
+    color:white;
+    font-weight: bolder;
+}
+
+/* левая часть */
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+.picture{
+    align-self: center;
+    background-image: url(https://newtonew.com/uploads/avatars/8309719d9445c0866564a1a3bd2c0861.png);
+    background-size: cover;
+    border: 3px solid white;
+    min-width: 170px;
+    min-height: 170px;
+    max-width: 170px;
+    max-height: 170px;
+    border-radius: 210px;
+    margin-bottom: 25px;
+}
+
+.block_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin-top: 15px;
+    padding: 25px;
+}
+
+.block_2 form{
+    width: 100%;
+}
+
+.block_2 .left, .block_2 a{
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    margin: 2% 0;
+    padding: 3%;
+    text-align: center;
+    background-color: #ffffff42;
+    border: 3px solid #ffffffa1;
+}
+
+.otpravit{
+    background-color: #f5b73d;
+    float: right;
+    width: 20%;
+    height: 5%;
+    cursor: pointer;
+}
+
+.block_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.submit{
+    margin-top: 12%;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+input.pic{
+    padding: 12px;
+    margin-top: 10px;
+    border: 3px solid white;
+    background-color: #ffffff42;
+    cursor: pointer;
+}
+
+.block_2 a, input.pic, input.submit, input.left{ 
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px; 
+    font-size: medium;
+}
+
+.block_2 a:hover, input.pic:hover, input.submit:hover, input.left:hover{
+    background-color: white;
+    color: #4e52549e;
+    box-shadow: 0px 0px 22px -3px #35384a;
+}
+
+.block, .block_2{
+    box-shadow: 0px 0px 14px -4px #478cc7;
+    background: linear-gradient(90deg, rgb(249, 173, 33) 0%, rgb(216, 105, 105) 100%);
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.box_1, .box_2, .box_3 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.msg{
+    margin-bottom: 1%;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.22);
+}
+
+
+@media screen and (max-width: 1100px)
+{
+body
+{
+flex-direction: column;
+}
+.box_1, .box_2, .box_3, .block, .block_2, .infa
+{
+width: 100%;
+}
+.box_2
+{
+min-height: 600px;
+order: 5;
+}
+}
+
+.box_2 form{
+    height: 100px;
+}
